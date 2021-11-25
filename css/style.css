@@ -153,4 +153,108 @@ html, body{
     text-align: center;
 }
 
+/* VIDEO */
+
+.video__popup {
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    min-height: 500px;
+    border-radius: 5px;
+}
+
+.video__bgdark {
+    contain: "";
+    background: #100f1399;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.video__popup a {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ff6600;
+    z-index: 100;
+}
+
+.video-play-icon {
+    display: inline-block;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 0.3s;
+    
+    animation: ripple 1s linear infinite;
+}
+
+.video-play-icon:hover {
+    transform: scale(1.2);
+    background-color: #ff6600;
+}
+
+.icon-second {
+    display: none;
+}
+
+.video-play-icon:hover .icon-second {
+    display: inline-block;
+    color: white;
+}
+
+.video-play-icon:hover .icon-first {
+    display: none;
+}
+
+#small-dialog {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+  }
+
+
 
