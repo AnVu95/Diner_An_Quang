@@ -42,7 +42,7 @@
         <div class="container">
             <div class="header__top">
                 <div class="header__logo">
-                    <h1><a class="logo-brand" href="index.html">Diner </a></h1>
+                    <h1><a class="logo-brand" href="#">Diner </a></h1>
                 </div>
                 <div class="header__right">
                     <div class="search-bar">
@@ -78,15 +78,15 @@
                             class="fa fa-times"></i></button>
                     <nav>
                         <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="error.html">404</a></li>
-                            <li><a href="landing-single.html">Landing Page</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="elements.html">Shot Codes</a></li>
-                            <li><a href="email.html">Email</a></li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#l">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">404</a></li>
+                            <li><a href="#">Landing Page</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Shot Codes</a></li>
+                            <li><a href="#">Email</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -106,16 +106,18 @@
     </header>
 
     <!-- About -->
-    <section class="about py-5">
+    <section class="aboutUs py-5">
         <div class="container py-md-5">
-            <div class="row about__content">
-                <div class="about__left col-lg-5">
-                    <div class="title">
-                        <h6>About Us</h6>
-                        <h3>We found our creative space that is open for you.</h3>
+            <div class="row content-1-grids">
+                <div class="col-lg-5 content-1-left">
+                    <div class="header-title">
+                        <h6 class="title-subhny">About Us</h6>
+                        <h3 class="title-w3l mb-4">
+                            We found our creative space that is open for you.
+                        </h3>
                     </div>
                 </div>
-                <div class="about__text col-lg-7 pl-lg-5 mt-lg-0 mt-3">
+                <div class="col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
                     <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                         ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
                         elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
@@ -131,34 +133,38 @@
     </section>
 
     <!-- Restaurants -->
-    <section class="restaurants py-5">
+    <section class="restaurants" id="why">
         <div class="container-fluid px-lg-0">
             <div class="row align-items-center no-gutters">
                 <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
                     <div class="restaurants__img">
+
                     </div>
                 </div>
-                <div class="restaurants__text col-lg-6 px-lg-4 py-lg-3 py-4">
-                    <div class="agent-block-image-inf p-md-4 p-3">
-                        <h6 class="title--color">More than 3000 Restaurants</h6>
-                        <h3>Book a table easly at the best price</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit
-                            amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
-                        </p>
-                        <div class="subscribe-cat mt-5">
-                            <div class="subscribe-cat-gd">
+                <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+                    <div class="p-md-5 p-3">
+                        <h6>More than 3000 Restaurants</h6>
+                        <h3 class="">
+                            Book a table easly at the best price</h3>
+                        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
+                            turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut
+                            justo ultrices
+                            in.</p>
+
+                        <div class="restaurants__content mt-5">
+                            <div class="restaurants__content-gd">
                                 <div class="icon mb-4">
-                                    <span class="fas fa-thumbs-up"></span>
+                                    <span class="fa fa-thumbs-up"></span>
                                 </div>
-                                <a href="#" class="subscribe-cat-link">Best Deals</a>
+                                <a href="#" class="restaurants__content-link">Best Deals</a>
                                 <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                             </div>
 
-                            <div class="subscribe-cat-gd">
+                            <div class="restaurants__content-gd">
                                 <div class="icon mb-4">
-                                    <span class="fas fa-utensils"></span>
+                                    <span class="fa fa-utensils"></span>
                                 </div>
-                                <a href="#" class="subscribe-cat-link">Best Food</a>
+                                <a href="#" class="restaurants__content-link">Best Food</a>
                                 <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                             </div>
 
@@ -170,7 +176,7 @@
     </section>
 
     <!-- What New -->
-    <section class="whatnew">
+    <section class="whatnew p-5">
         <div class="container py-md-5 py-2">
             <div class="title text-center">
                 <h6 class="title-subhny">What's New</h6>
@@ -644,15 +650,18 @@
             document.getElementById("nav__close").style.visibility = "hidden";
         }
     </script>
-    
+
     <!-- BACKTOTOP -->
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
 
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- COUNTER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -663,13 +672,14 @@
             'delay': 7
         });
     </script>
-    
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+
     <!-- VIDEOPOPUP -->
 
 
     <!-- OwlCarousel2 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -692,16 +702,7 @@
         }
     </script>
 
-    <!-- JQUERY -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
 
-    <!-- BS4 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-    
 </body>
 
 </html>
