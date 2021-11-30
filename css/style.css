@@ -688,11 +688,10 @@ h6 {
     display: grid;
     align-items: center;
     min-height: 500px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .video__bgdark {
-    contain: "";
     background: #100f1399;
     position: absolute;
     top: 0;
