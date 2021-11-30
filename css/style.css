@@ -532,7 +532,7 @@ h6 {
      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
      background-color: var(--bg-color);
      position: relative;
-     border: 1px solid var(--border-color-light);
+     border: 1px solid var(--border-color-lightg);
    }
  .box-wrap:hover {
      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
@@ -668,11 +668,11 @@ h6 {
     font-size: 2.6em;
     font-weight: 600;
     line-height: 2;
-    color: black;
+    color: var(--heading-color);
 }
 
 .number__bg p {
-    color: #161c2db3;
+    color: var(--font-color);
     font-size: 1.1em;
     font-weight: 600;
 }
