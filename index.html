@@ -61,7 +61,7 @@
                                         <input type="checkbox" id="checkbox">
                                         <div class="mode-container">
                                             <i class="gg-sun"></i>
-                                            <i class="gg-moon"></i>
+                                            <i class=" gg-moon"></i>
                                         </div>
                                     </label>
                                 </div>
@@ -673,7 +673,9 @@
 
     <!-- VIDEOPOPUP -->
     <script src="./js/jquery.magnific-popup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- OwlCarousel2 -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -696,6 +698,34 @@
         function fun() {
             document.getElementById("footer__email").style.border = "1px solid #ff6600";
         }
+    </script>
+
+
+    <!-- Dark Theme -->
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
 
 
