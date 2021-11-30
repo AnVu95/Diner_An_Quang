@@ -3,7 +3,7 @@
     --secondary-color: #ffc600;
     --font-color: rgba(22, 28, 45, 0.7);
     --bg-color: #fff;
-    --heading-color: #232121;
+    --heading-color: #000;
     --border-color-light: #eee;
     --bg-light: rgba(130, 115, 252, .05);
     --bg-grey: #f7f7f7;
@@ -43,6 +43,7 @@ h6 {
      font-size: 38px;
      line-height: 48px;
      font-weight: 600;
+     color: var(--heading-color);
  }
  h1,
  h2,
@@ -67,6 +68,7 @@ h6 {
      font-size: 38px;
      line-height: 48px;
      font-weight: 600;
+     
  }
  
  .theme-switch-wrapper {
@@ -363,7 +365,7 @@ h6 {
  }
 
  .aboutUs h3 {
-     color: var(--font-color);
+    color: var(--heading-color);
  }
  
  /* Restaurants */
@@ -454,7 +456,7 @@ h6 {
      border-radius: 6px;
  }
  .whatnew h3 {
-     color: var(--font-color);
+    color: var(--heading-color);
  }
  .whatnew__img img {
      display: block;
@@ -570,6 +572,7 @@ h6 {
     background-size: cover;
     height: 500px;
     position: relative;
+    
 }
 
 .deliciousness__dark {
@@ -622,6 +625,7 @@ h6 {
     position: relative;
     margin-top: -70px;
     z-index: 10;
+    background-color: var(--bg-color);
 }
 
 .number__bg{
@@ -683,6 +687,7 @@ h6 {
 .video__popup {
     background-image: url(../img/banner3.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
     z-index: 1;
     display: grid;
@@ -1165,21 +1170,44 @@ h6 {
 
   /* REPONSIVE */
 
-  @media all and (max-width:992px) {
-     .subscribe-cat {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       margin-top: 30px;
-       grid-gap: 20px 10px;
+ /* REPONSIVE */
+
+ @media all and (max-width:992px) {
+    /* .subscribe-cat {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 30px;
+      grid-gap: 20px 10px;
+    }
+  
+    .subscribe-cat .subscribe-cat-link {
+      font-size: 18px;
+    } */
+    .restaurants__img {
+  
+        min-height: 200px;
+    }
+
+    .deliciousness h3 {
+       font-size: 32px;
+       line-height: 40px;
      }
-   
-     .subscribe-cat .subscribe-cat-link {
+
+     .deliciousness p {
        font-size: 18px;
+       line-height: 28px;
      }
-     .restaurants__img {
-   
-         min-height: 200px;
+ 
+     .deliciousness__buttom {
+         display: flex;            
      }
+     .deliciousness__buttom #btn1 {
+         width: 180px;
+     }
+     .deliciousness__buttom #btn2 {
+       width: 180px;
    }
+  
+  }
 
 
