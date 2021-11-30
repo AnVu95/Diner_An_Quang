@@ -237,9 +237,9 @@ h6 {
    border-radius: 10px;
    position: relative;
    right: 0;
-   background: white;
+   background: var(--bg-color);
    outline: 0;
-   border: 1px solid white;
+   border: 1px solid var(--bg-color);
  }
  
  .header__right .search-bar .search .search__icon {
@@ -532,7 +532,7 @@ h6 {
      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
      background-color: var(--bg-color);
      position: relative;
-     border: 1px solid #eee;
+     border: 1px solid var(--border-color-light);
    }
  .box-wrap:hover {
      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
