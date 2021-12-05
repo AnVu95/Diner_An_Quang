@@ -12,7 +12,7 @@
   
   [data-theme="dark"] {
     --primary-color: #ff6600;
-    --secondary-color: var(--secondary-color);
+    --secondary-color: #ffc600;
     --font-color: #c2d0da;
     --bg-color: #232220;
     --heading-color: #eee;
@@ -200,6 +200,7 @@ h6 {
  .header__logo a{
      color: white;
      text-decoration: none;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
  }
  .header__right {
    display: grid;
@@ -245,7 +246,7 @@ h6 {
      margin-top: 100px;
  }
    
- .header__banner .header__title h3 {
+  .header__title h3 {
      font-size: 54px;
      line-height: 64px;
      font-weight: 600;
@@ -624,7 +625,7 @@ h6 {
 .number {
     position: relative;
     z-index: 10;
-    background: var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 .number__bg{
@@ -636,7 +637,10 @@ h6 {
     transform: translateY(0);
     
 }
+.number__item {
+    margin-top: -70px;
 
+}
 .number__bg:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 60px 0 rgb(0 0 0 / 15%);
@@ -1176,16 +1180,6 @@ h6 {
  /* REPONSIVE */
 
  @media all and (max-width:992px) {
-    /* .subscribe-cat {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-top: 30px;
-      grid-gap: 20px 10px;
-    }
-  
-    .subscribe-cat .subscribe-cat-link {
-      font-size: 18px;
-    } */
     .restaurants__img {
   
         min-height: 200px;
@@ -1209,8 +1203,49 @@ h6 {
      }
      .deliciousness__buttom #btn2 {
        width: 180px;
-   }
-  
+    }
+
+    .number__item {
+        margin-top: 50px;
+    }
+    .counter {
+    font-size: 2em;
+    }
+
+    .number__bg {
+    text-align: center;
+    padding: 30px 10px;
+    }
+
+    .whatnew__content {
+        margin: -50px;
+    }
+    .whatnew .title {
+        padding-bottom: 60px;
+    }
   }
+
+  @media (max-width:576px) {
+    .search-bar {
+        visibility: hidden;
+    }
+    .header__banner .header__title {
+        padding-bottom: 100px;
+    }
+    .header__right {
+        margin-left: -50px;
+    }
+    .header__title h3 {
+        font-size: 40px;
+    }
+    .header__banner{
+        min-height:450px;
+    }
+    .aboutUs .header-title h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+  }
+
 
 
